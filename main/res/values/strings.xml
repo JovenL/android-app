@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">vedio</string>
+    <string name="hello_world_1">Hello World 1 !</string>
+    <string name="play">Play</string>
+    <string name="video_thumbnail_description">视频缩略图</string>
+    <string name="fullscreen_button_description">全屏</string>
+    <string name="play_button_description">播放</string>
+    <string name="pause_button_description">暂停</string>
+    <string name="rewind_button_description">后退</string>
+    <string name="fastforward_button_description">前进</string>
+    <string name="previous_button_desc">上一个</string>
+</resources>

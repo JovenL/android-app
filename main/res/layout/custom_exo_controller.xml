@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#CC000000"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- 进度条 -->
+    <com.google.android.exoplayer2.ui.DefaultTimeBar
+        android:id="@id/exo_progress"
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+
+    <!-- 控制按钮（使用权重实现均匀分布） -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:gravity="center_vertical">
+
+        <!-- 上一个视频按钮 -->
+        <ImageButton
+            android:id="@id/exo_prev"
+            style="@style/ExoMediaButton.Previous"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/previous_button_desc"
+            android:visibility="gone" />
+
+        <!-- 后退按钮 -->
+        <ImageButton
+            android:id="@id/exo_rew"
+            style="@style/ExoMediaButton.Rew"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/rewind_button_description"/>
+
+        <!-- 播放/暂停按钮 -->
+        <ImageButton
+            android:id="@id/exo_play"
+            style="@style/ExoMediaButton.Play"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/play_button_description"/>
+
+        <ImageButton
+            android:id="@id/exo_pause"
+            style="@style/ExoMediaButton.Pause"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/pause_button_description"
+            android:visibility="gone" />
+
+        <!-- 前进按钮 -->
+        <ImageButton
+            android:id="@id/exo_ffwd"
+            style="@style/ExoMediaButton.Ffwd"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/fastforward_button_description"/>
+
+        <!-- 全屏按钮 -->
+        <ImageButton
+            android:id="@+id/exo_fullscreen"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/exo_icon_fullscreen_enter"
+            android:contentDescription="@string/fullscreen_button_description"/>
+    </LinearLayout>
+</LinearLayout>
